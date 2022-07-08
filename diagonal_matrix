@@ -1,0 +1,48 @@
+#include<stdio.h>
+int main()
+{
+	int row , col;
+	int i,j;
+	int point;
+	int mat[100][100];
+	printf("enter row and column of matrix:\n");
+	scanf("%d %d",&row,&col);
+	printf("enter the element of matrix:\n");
+	for(i=0;i<row;i++)
+	{
+		for(j=0;j<col;j++)
+		{
+			scanf("%d",&mat[i][j]);
+		}
+	}
+		for(i=0;i<row;i++)
+	{
+		for(j=0;j<col;j++)
+		{
+			printf("%d\t",mat[i][j]);
+		}
+		printf("\n");
+	}
+	
+	
+	
+	
+	
+			for(i=0;i<row;i++)
+	{
+		for(j=0;j<col;j++)
+		{
+	
+	if (i!=j && mat[i][j]!=0)
+	{
+		point =1;
+		break;
+	}
+}
+}
+
+if(point==1)
+printf("given matrix is not a diagonal matrix.");
+else
+printf("given matrix is a diagonal matrix.");
+}
