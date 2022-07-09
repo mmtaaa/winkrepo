@@ -1,0 +1,25 @@
+#include<stdio.h>
+int add(int a,int b)
+{
+	
+   	int sum;
+	sum=a+b;
+	return sum;	
+}
+int sub(int a ,int b )
+{
+ 
+ 	int sub;
+	 sub=a-b;
+	return sub;	
+ }
+int main()
+{
+
+  int c,d;
+printf("enter any two values");
+scanf("%d %d",&c,&d);
+printf("the sum is %d\n",add(c,d));
+printf("the difference is %d",sub(c,d));
+return 0;
+}
