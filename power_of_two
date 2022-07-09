@@ -1,0 +1,18 @@
+#include<stdio.h>
+#define base 2
+	int power( int expn)
+	{
+		if (expn == 0)
+		return 1;
+		else if (expn>0)
+    	return base*power(expn-1);
+		else
+		return 1/power( -expn);
+	}
+int main()
+{
+	int exponent;
+	printf("enter the exponent to be found");
+		scanf("%d",&exponent);	
+	printf("the value is %d",power(exponent));
+}
