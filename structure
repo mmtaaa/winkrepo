@@ -1,5 +1,5 @@
 #include<stdio.h>
-#include<string.h>
+#include<string.h> // to use strcmp function"to compare string"
 struct dob
 {
 	int day;
